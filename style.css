@@ -3,12 +3,16 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 .btn-group button {
 	background-color: #232b43; 
-	border: 1px solid #232b43; 
+	border: none; 
+	border-radius: 4px;
 	color: white; /* White text */
-	padding: 12px 53px; /* Some padding */
+	padding: 10px 20px; /* Some padding */
 	cursor: pointer; /* Pointer/hand icon */
+	width: 146px;
+	min-width: 100px;
 }
   
 .btn-group button:not(:last-child) {
@@ -17,14 +21,17 @@ body {
   
   /* Add a background color on hover */
 .btn-group button:hover {
-	background-color: #232b43;
+	background: linear-gradient(to bottom, #0d2365, #232b43);
 }
 
 .container1{
-	width: auto;
-	margin: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	background-color: #232b43;
+	max-width: 100%;
 }
+
 .container2{
 	width: auto;
 	margin: auto;
@@ -60,18 +67,36 @@ textarea {
 	box-sizing: border-box;
 	resize: vertical;
 }
+.rating-buttons input[type="radio"] {
+	display: none;
+}
+  
+.rating-buttons label {
+	display: inline-block;
+	padding: 14px 40px;
+	margin-right: 10px;
+	background-color: #ffba25;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+}
+  
+.rating-buttons input[type="radio"]:checked + label {
+	background: linear-gradient(to bottom, #F7D358, #E8AD00);
+	color: #000000;
+}
 
 button{
 	background-color: #ffba25;
 	color: rgb(0, 0, 0);
-	padding: 12px 140px;
+	padding: 15px 140px;
 	border: none;
 	border-radius: 6px;
 	cursor: pointer;
 }
 
 button:hover {
-	background-color: #ffba25;
+	background: linear-gradient(to bottom, #F7D358, #E8AD00);
 }
 
 select {
@@ -112,4 +137,17 @@ td{
 	text-align: left;
 	vertical-align: top;
 	padding: 8px;
+}
+
+::-webkit-scrollbar {
+	width: 14px;
+}
+  
+::-webkit-scrollbar-track {
+	background-color: #e7ebf4;
+}
+  
+::-webkit-scrollbar-thumb {
+	background-color: #c3c8cf;
+	border-radius: 5px;
 }
