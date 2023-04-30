@@ -3,19 +3,23 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
-.featuredBtn {
-	background-color: #232b43;
-	color: rgb(255, 255, 255);
-	padding: 12px 54.5px;
-	border: none;
-	border-radius: 6px;
-	cursor: pointer;
-  }
-
-.featuredBtn:hover {
+.btn-group button {
+	background-color: #232b43; 
+	border: 1px solid #232b43; 
+	color: white; /* White text */
+	padding: 12px 53px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+}
+  
+.btn-group button:not(:last-child) {
+	border-right: none; /* Prevent double borders */
+}
+  
+  /* Add a background color on hover */
+.btn-group button:hover {
 	background-color: #232b43;
 }
+
 .container1{
 	width: auto;
 	margin: auto;
